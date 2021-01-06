@@ -12,6 +12,13 @@ ADD entrypoint2.sh /
 
 RUN chmod +x entrypoint2.sh
 
-ENTRYPOINT ["./entrypoint2.sh"]
+#USER docker
+#CMD ["sudo","bash","./entrypoint2.sh",">>","/var/log/lefutott.log"]
 
-CMD [ "python", "./changefields.py" ]
+RUN ./entrypoint2.sh
+
+
+
+#ENTRYPOINT ["./entrypoint2.sh"]
+
+#CMD [ "python", "./changefields.py" ]
