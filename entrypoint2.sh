@@ -12,4 +12,3 @@ BASH_ENV=/tmp/container.env
 # This extra line makes it a valid cron" > /tmp/scheduler.txt
 
 crontab /tmp/scheduler.txt
-sudo cron -f
