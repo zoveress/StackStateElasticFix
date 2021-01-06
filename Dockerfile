@@ -15,9 +15,9 @@ RUN chmod +x entrypoint2.sh
 #USER docker
 #CMD ["sudo","bash","./entrypoint2.sh",">>","/var/log/lefutott.log"]
 
-RUN ./entrypoint2.sh
+#RUN ./entrypoint2.sh
 
-
+CMD [ "./entrypoint2.sh" ]
 
 #ENTRYPOINT ["./entrypoint2.sh"]
 
