@@ -12,6 +12,6 @@ ADD entrypoint2.sh /
 
 RUN chmod +x entrypoint2.sh
 
-ENTRYPOINT ["bash","./entrypoint2.sh"]
+ENTRYPOINT ["./entrypoint2.sh"]
 
 CMD [ "python", "./changefields.py" ]
