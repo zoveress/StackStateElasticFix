@@ -10,5 +10,7 @@ ADD entrypoint2.sh /
 
 RUN chmod +x entrypoint2.sh
 
+RUN chmod -R 777 /var/run
+
 ENTRYPOINT ["./entrypoint2.sh"]
 
